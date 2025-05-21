@@ -1,0 +1,6 @@
+
+# distros don't belong in source control
+dist/*
+
+# build artifacts
+*.egg-info
