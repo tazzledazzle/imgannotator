@@ -4,3 +4,6 @@ dist/*
 
 # build artifacts
 *.egg-info
+
+secrets.proerties
+# pyenv
