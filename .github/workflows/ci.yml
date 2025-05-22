@@ -1,0 +1,24 @@
+name: CI
+
+on: [push, pull_request]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install dependencies
+        run: pip install .[dev]
+      - name: Black check
+        run: black --check src tests
+      - name: Flake8 lint
+        run: flake8 src tests
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install and test
+        run: |
+          pip install .[dev]
+          pytest --maxfail=1 --disable-warnings -q

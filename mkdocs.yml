@@ -1,0 +1,7 @@
+# mkdocs.yml (at project root)
+site_name: imgannotator
+nav:
+  - Home: index.md
+docs_dir: docs
+theme:
+  name: material

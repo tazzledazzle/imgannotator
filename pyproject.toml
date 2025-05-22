@@ -16,8 +16,21 @@ license = {text="MIT"}
 
 [project.scripts]
 imgannotator = "imgannotator.cli:app"
-# dependencies = [
-#     "typer[all]",
-#     "Pillow",
-#     "exifread",
-# ]
+
+
+[project.optional-dependencies]
+dev = [
+  "black",
+  "flake8",
+  "flake8-black",
+  "pytest",
+  "mkdocs",
+  "piexif",
+]
+docs = [
+  "mkdocs",
+  "mkdocs-material",
+  "mkdocs-git-revision-date-localized-plugin",
+  "mkdocs-minify-plugin",
+  "mkdocs-awesome-pages-plugin",
+]
