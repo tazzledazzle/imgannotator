@@ -28,7 +28,7 @@ dev = [
   "piexif",
   "typer",
   "pillow",
-  "cv2"
+  "opencv-python"
 ]
 docs = [
   "mkdocs",
