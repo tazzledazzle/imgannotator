@@ -3,6 +3,7 @@ import os
 from PIL import Image, ImageFilter
 import cv2
 
+
 def apply_filter(folder: str, filter_name: str):
     for fname in os.listdir(folder):
         if fname.lower().endswith((".jpg", ".png")):

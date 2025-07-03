@@ -3,6 +3,7 @@ import os
 import piexif
 from PIL import Image
 
+
 def embed_metadata(folder: str, label: str):
     for fname in os.listdir(folder):
         if fname.lower().endswith((".jpg",)):
