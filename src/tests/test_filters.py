@@ -1,7 +1,8 @@
 # tests/test_filters.py
+import os
+import tempfile
 from imgannotator.filters import apply_filter
 from PIL import Image
-
 
 def test_apply_filter(tmp_path):
     img_path = tmp_path / "test.jpg"
