@@ -6,3 +6,5 @@ mkdocs
 piexif
 typer
 pillow
+setuptools
+wheel

@@ -8,11 +8,11 @@ version = "0.1.0"
 description = "CLI for applying image filters and embedding EXIF metadata"
 readme = "README.md"
 keywords = ["cli", "typer", "image", "exif"]
-authors = [{name="Your Name", email="you@example.com"}]
+authors = [{name="Terence Schumacher", email="terenceschumacher@gmail.com"}]
 license = {text="MIT"}
 
 [project.urls]
-"Homepage" = "https://github.com/you/imgannotator"
+"Homepage" = "https://github.com/tazzledazzle/imgannotator"
 
 [project.scripts]
 imgannotator = "imgannotator.cli:app"
@@ -26,6 +26,8 @@ dev = [
   "pytest",
   "mkdocs",
   "piexif",
+  "typer",
+  "pillow",
 ]
 docs = [
   "mkdocs",
