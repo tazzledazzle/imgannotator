@@ -28,6 +28,7 @@ dev = [
   "piexif",
   "typer",
   "pillow",
+  "cv2"
 ]
 docs = [
   "mkdocs",

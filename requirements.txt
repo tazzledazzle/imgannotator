@@ -8,3 +8,4 @@ typer
 pillow
 setuptools
 wheel
+opencv-python
