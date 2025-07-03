@@ -5,6 +5,7 @@ from imgannotator.metadata import embed_metadata
 from PIL import Image
 import piexif
 
+
 def test_embed_metadata(tmp_path):
     img_path = tmp_path / "test.jpg"
     Image.new("RGB", (10, 10)).save(img_path)
